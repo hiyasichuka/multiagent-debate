@@ -1,0 +1,15 @@
+[project]
+name = "multiagent-debate"
+version = "0.1.0"
+description = "Reproducing 'Improving Factuality and Reasoning in Language Models through Multiagent Debate' (Du et al., 2023) with local LLMs via Ollama"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ollama",
+    "datasets",
+    "numpy",
+    "matplotlib",
+    "tqdm",
+    "jupyter",
+    "ipykernel",
+]
