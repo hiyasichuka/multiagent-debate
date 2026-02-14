@@ -2,6 +2,8 @@
 
 論文 [Improving Factuality and Reasoning in Language Models through Multiagent Debate](https://arxiv.org/abs/2305.14325) (Du et al., 2023) の手法を、ローカルLLMで再現・検証するプロジェクトです。
 
+解説記事: [ローカルLLMでもディベートさせれば賢くなるのか？ (Zenn)](https://zenn.dev/takaha4k/articles/multiagent-debate-local-llm)
+
 ## Multiagent Debate とは
 
 LLMに問題を解かせるとき、1回だけ答えさせるよりも、複数のエージェントに互いの回答を見せ合って議論させた方が精度が上がる、という研究です。
@@ -96,7 +98,7 @@ uv run jupyter notebook
 | Multiagent Debate（3 agents, 2 rounds） | 65.0% (13/20) | 10.7% |
 | **差分** | **+20.0pt** | |
 
-1.5B の軽量モデルでも Debate による精度向上が確認できました。ただし N=20 のため標準誤差が大きく、試行ごとのばらつきがあります。詳しい考察は [Zenn の解説記事](https://zenn.dev/hiyasichuka/articles/multiagent-debate-local-llm) にまとめています。
+1.5B の軽量モデルでも Debate による精度向上が確認できました。ただし N=20 のため標準誤差が大きく、試行ごとのばらつきがあります。詳しい考察は [Zenn の解説記事](https://zenn.dev/takaha4k/articles/multiagent-debate-local-llm) にまとめています。
 
 ## 実験パラメータの変更
 
